@@ -23,10 +23,14 @@ class AdminSeeder extends Seeder
         $user->first_name           = 'Admin';
         $user->last_name            = 'Users';
         $user->email                = 'eve.holt@reqres.in';
+        $user->idade                = 22;
+        $user->cor                  = '#2d3436';
+        $user->info                 = 'Este usuário é o administrador master';
         $user->email_verified_at    = now();
         $user->avatar               = 'https://images.unsplash.com/photo-1551026395-44699d859bbb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=200&q=100';
         $user->password             = Hash::make('cityslicka');
         $user->rule_id              = 1;
+        $user->reqres_id            = 0;
         $user->save();
     }
 }
